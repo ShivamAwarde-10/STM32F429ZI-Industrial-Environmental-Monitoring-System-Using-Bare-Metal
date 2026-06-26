@@ -1,6 +1,5 @@
 #include "gpio.h"
 
-```c
 // Enable GPIO peripheral clock
 static void GPIO_EnableClock(GPIO_TypeDef *GPIOx)
 {
@@ -65,4 +64,4 @@ uint8_t GPIO_ReadPin(GPIO_TypeDef *GPIOx,
 {
     return (uint8_t)((GPIOx->IDR >> pin) & 0x01);  // Return current logic level of selected pin
 }
-```
+
